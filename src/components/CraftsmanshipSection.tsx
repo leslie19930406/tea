@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Sparkles, Wind, Flame, Hand, Sun, Shield, Package, Check, Clock, AlertCircle } from 'lucide-react';
 import { Language, CraftStep } from '../types/puerh';
 import { craftSteps } from '../data/puerhData';
+import { CRAFT_STEP_IMAGES } from '../data/craftStepImages';
 import regeneratedCraftImage from '../assets/images/regenerated_image_1791885957254.jpg';
 
 interface CraftsmanshipSectionProps {
@@ -11,6 +12,9 @@ interface CraftsmanshipSectionProps {
 export const CraftsmanshipSection: React.FC<CraftsmanshipSectionProps> = ({ language }) => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const currentStep = craftSteps[currentStepIndex];
+
+  // Dynamically resolve image for the current craftsmanship stage
+  const currentStepImage = CRAFT_STEP_IMAGES[currentStep.step] || currentStep.imageUrl || regeneratedCraftImage;
 
   const getStepIcon = (iconName: string) => {
     switch (iconName) {
@@ -111,8 +115,8 @@ export const CraftsmanshipSection: React.FC<CraftsmanshipSectionProps> = ({ lang
           {/* Left Visual Imagery (5 cols) */}
           <div className="lg:col-span-5 relative rounded-xl overflow-hidden aspect-[4/3] lg:aspect-square">
             <img
-              src={regeneratedCraftImage}
-              alt={currentStep.titleEn}
+              src={currentStepImage}
+              alt={language === 'en' ? currentStep.titleEn : currentStep.titleZh}
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0e1610] via-transparent to-transparent" />

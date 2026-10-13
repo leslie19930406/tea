@@ -1,4 +1,5 @@
 import { MountainTerroir, CraftStep, TeaProduct, CurrencyRate, Currency } from '../types/puerh';
+import { CRAFT_STEP_IMAGES } from './craftStepImages';
 
 export const currencyRates: Record<Currency, CurrencyRate> = {
   USD: { symbol: '$', rateFromUSD: 1.0 },
@@ -116,7 +117,7 @@ export const craftSteps: CraftStep[] = [
     naturalPrincipleZh: '早春头采古树芽叶蕴藏了整个冬眠期从十米地下根系积蓄的微量矿物与丰富茶氨酸，内含物质最为丰盈。',
     whyMachineFailsEn: 'Mechanical tea harvesters shred older leaves and crush tender buds, triggering uncontrolled premature oxidation.',
     whyMachineFailsZh: '机械采摘无法甄别芽叶成熟度，粉碎式刀片破坏叶肉细胞，导致杂质渗入且造成过早非受控氧化。',
-    imageUrl: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: CRAFT_STEP_IMAGES[1],
     iconName: 'Sparkles',
   },
   {
@@ -133,7 +134,7 @@ export const craftSteps: CraftStep[] = [
     naturalPrincipleZh: '顺应植物天然脱水节律，使叶梗韧性增强、水分适度降低，为下阶段锅炒杀青保留最佳酵素活性。',
     whyMachineFailsEn: 'Hot-air withering tunnels cook leaves artificially, destroying delicate floral aromatics and burning cellular moisture.',
     whyMachineFailsZh: '工业化热风烘道强制烘干会烫焦叶缘，摧毁野生茶树独有的冷冽兰花香气物质。',
-    imageUrl: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: CRAFT_STEP_IMAGES[2],
     iconName: 'Wind',
   },
   {
@@ -150,7 +151,7 @@ export const craftSteps: CraftStep[] = [
     naturalPrincipleZh: '与绿茶高温彻底杀灭酵素不同，古法普洱仅钝化大部分多酚氧化酶，特意保留15%-20%的生物活性酶，这是后发酵历经数十年越陈越香的生命之钥。',
     whyMachineFailsEn: 'Continuous rotary gas drums generate extreme harsh heat, scorching tea hairs and deadening all aging potential.',
     whyMachineFailsZh: '现代滚筒式电热杀青机受热不均且火力生硬，会将芽毫烤焦并彻底杀死活性酶，使茶叶丧失转化生命力。',
-    imageUrl: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: CRAFT_STEP_IMAGES[3],
     iconName: 'Flame',
   },
   {
@@ -167,7 +168,7 @@ export const craftSteps: CraftStep[] = [
     naturalPrincipleZh: '揉而不碎，确保整叶完整舒展。冲泡时茶汁能迅速释出，滋味层次分明且耐泡度高达30道以上。',
     whyMachineFailsEn: 'Mechanical metal pressing rollers crush whole leaves into fragmented dust and squeeze out essential tea oils.',
     whyMachineFailsZh: '机械揉捻桶金属齿轮压力粗暴，极易碾碎古树长条索，导致茶汤浑浊苦涩。',
-    imageUrl: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: CRAFT_STEP_IMAGES[4],
     iconName: 'Hand',
   },
   {
@@ -184,7 +185,7 @@ export const craftSteps: CraftStep[] = [
     naturalPrincipleZh: '正是这一步赋予了普洱茶与太阳直接沟通的神奇基因。日光温和脱水不仅保留了酶活性，更附着了原生森林里的益生微生态菌群。',
     whyMachineFailsEn: 'Oven drying (Hong Qing) or baking alters the amino acids, turning it into standard green tea that deteriorates after 12 months.',
     whyMachineFailsZh: '若采用烘干房高温烘青，茶叶内活性酶被彻底灭活，沦为不能长久转化的普通绿茶，存放一年即变酸变味。',
-    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: CRAFT_STEP_IMAGES[5],
     iconName: 'Sun',
   },
   {
@@ -201,7 +202,7 @@ export const craftSteps: CraftStep[] = [
     naturalPrincipleZh: '石磨压制讲究“外紧内松、条索分明”。适度的空间结构为后期空气流通与陈化微生物的繁衍保留了呼吸孔隙。',
     whyMachineFailsEn: 'Hydraulic steel hydraulic rams compress cakes into rock-hard bricks, crushing cellular pores and hindering airflow transformation.',
     whyMachineFailsZh: '现代油压铁模机压力过猛，压出的茶饼僵硬如铁板，密不透风，导致内层茶叶陈化窒息或发生败坏。',
-    imageUrl: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: CRAFT_STEP_IMAGES[6],
     iconName: 'Shield',
   },
   {
@@ -218,7 +219,7 @@ export const craftSteps: CraftStep[] = [
     naturalPrincipleZh: '竹笋壳具有天然防潮防异味又透气呼吸的独特性质。伴随漫长时光陈化，笋叶的竹香与茶气融为一体，汤色渐由金黄转为剔透琥珀与醇厚宝石红。',
     whyMachineFailsEn: 'Plastic heat-shrink wrapping prevents oxygen exchange, creating sour anaerobic decomposition.',
     whyMachineFailsZh: '现代塑料热缩膜封装隔绝了氧气，导致茶叶在密闭中受潮闷酸变质，无法实现真正的时光蜕变。',
-    imageUrl: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: CRAFT_STEP_IMAGES[7],
     iconName: 'Package',
   },
 ];
