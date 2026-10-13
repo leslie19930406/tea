@@ -6,7 +6,7 @@
 // 2. 外部图片：直接填入任何网络图片 URL（如 CDN、图床、Unsplash 或 GitHub 地址）
 // ==============================================================================
 
-import step1Plucking from '../assets/images/regenerated_image_1791885957254.jpg';
+import step1Plucking from '../assets/images/regenerated_image_1791901060057.jpg';
 
 export interface CraftStepImageItem {
   step: number;

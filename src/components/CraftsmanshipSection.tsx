@@ -3,7 +3,7 @@ import { Sparkles, Wind, Flame, Hand, Sun, Shield, Package, Check, Clock, AlertC
 import { Language, CraftStep } from '../types/puerh';
 import { craftSteps } from '../data/puerhData';
 import { CRAFT_STEP_IMAGES } from '../data/craftStepImages';
-import regeneratedCraftImage from '../assets/images/regenerated_image_1791885957254.jpg';
+import regeneratedCraftImage from '../assets/images/regenerated_image_1791901060057.jpg';
 
 interface CraftsmanshipSectionProps {
   language: Language;
