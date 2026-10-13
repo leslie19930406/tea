@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Noto Serif SC', Georgia, Cambria, serif;
+    --font-display: 'Cinzel', 'Noto Serif SC', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-serif-sc {
+  font-family: 'Noto Serif SC', Georgia, Cambria, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', 'Noto Serif SC', Georgia, serif;
+}
+
+/* Custom dark forest theme scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1411;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #233127;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #364b3c;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "YUNNAN ARBOR - Ancient Tree Pu-erh Tea Export Portal",
+  "description": "Premium Yunnan ancient tree Pu-erh tea international trade portal. Exploring primeval forest terroir, rare old-arbor harvest, natural sun-drying craftsmanship, and mindful communion with nature.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
